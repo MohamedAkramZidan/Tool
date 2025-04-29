@@ -19,7 +19,7 @@ def show_home():
 
 @st.cache_data
 def load_and_clean_data():
-    df = pd.read_csv("C:/Users/Mohamed Akram/Downloads/PP.csv")
+    df = pd.read_csv("PP.csv")
     data = pd.DataFrame(df)
     # Columns to clean: remove commas and replace Unicode minus (or similar) with '-'
     cols_to_clean = ['Population (2025)', 'Net Change', 'Density (P/Km²)', 'Land Area (Km²)', 'Migrants (net)']
@@ -151,7 +151,7 @@ def show_land_map():
     st.title("🌍 Land Map - Population Density")
 
     # Load the shapefile
-    world = gpd.read_file('C:/Users/Mohamed Akram/Downloads/110m_cultural/ne_110m_admin_0_countries.shp')
+    world = gpd.read_file('ne_110m_admin_0_countries.shp')
 
     # Merge country data with population density
     world = world.merge(
@@ -229,7 +229,7 @@ def show_regex_analysis():
 @st.cache_data
 def load_and_clean_yearly_population_data():
     # Load the dataset
-    df2 = pd.read_csv("C:/Users/Mohamed Akram/Downloads/PP2.csv")
+    df2 = pd.read_csv("PP2.csv")
     data2 = pd.DataFrame(df2)
 
     # Columns to clean: remove commas, replace Unicode minus (or similar) with '-'
