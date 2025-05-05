@@ -96,4 +96,3 @@ To analyze and visualize population data projections for 2025 and historical pop
 
 ---
 
-🚀 _This project will evolve further with more interactivity and deeper insights as we continue through Phase 2!_
