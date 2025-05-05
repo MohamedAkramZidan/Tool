@@ -192,6 +192,7 @@ def show_scatter_plots_and_corr():
 
     # Scatter Plot 2: Migrants (net) vs Net Change
     st.subheader("2. Migrants (net) vs Net Change")
+    plt.figure()
     sns.scatterplot(data=data_country, x='Migrants (net)', y='Net Change')
     plt.title('Migrants (net) Vs Net Change')
     plt.xlabel('Migrants (net)')
