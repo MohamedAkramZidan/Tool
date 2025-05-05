@@ -203,6 +203,7 @@ def show_scatter_plots_and_corr():
 
     # Scatter Plot 3: Land Area (Km²) vs Density (P/Km²)
     st.subheader("3. Land Area (Km²) vs Density (P/Km²)")
+    plt.figure()
     sns.scatterplot(data=data_country, x='Land Area (Km²)', y='Density (P/Km²)', color='blue')
     plt.title('Land Area (Km²) Vs Density (P/Km²)')
     plt.xlabel('Land Area (Km²)')
