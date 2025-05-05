@@ -183,6 +183,8 @@ def show_scatter_plots_and_corr():
     st.subheader("1. Median Age vs Fertility Rate")
     sns.scatterplot(data=data_country, x='Median Age', y='Fertility Rate')
     plt.title('Median Age Vs Fertility Rate')
+    plt.xscale('Median Age')
+    plt.yscale('Fertility Rate')
     st.pyplot(plt)
 
     # Correlation between Median Age and Fertility Rate
@@ -192,6 +194,8 @@ def show_scatter_plots_and_corr():
     st.subheader("2. Migrants (net) vs Net Change")
     sns.scatterplot(data=data_country, x='Migrants (net)', y='Net Change')
     plt.title('Migrants (net) Vs Net Change')
+    plt.xscale('Migrants (net)')
+    plt.yscale('Net Change')
     st.pyplot(plt)
 
     # Correlation between Migrants (net) and Net Change
@@ -201,8 +205,8 @@ def show_scatter_plots_and_corr():
     st.subheader("3. Land Area (Km²) vs Density (P/Km²)")
     sns.scatterplot(data=data_country, x='Land Area (Km²)', y='Density (P/Km²)')
     plt.title('Land Area (Km²) Vs Density (P/Km²)')
-    plt.xscale('log')
-    plt.yscale('log')
+    plt.xscale('Land Area (Km²)')
+    plt.yscale('Density (P/Km²)')
     st.pyplot(plt)
 
     # Correlation between Land Area (Km²) and Density (P/Km²)
